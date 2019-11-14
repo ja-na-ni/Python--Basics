@@ -1,0 +1,113 @@
+type(S) will tell what datatype the variable contains.
+INDEXING: IN PYTHOn indexing starts with 0.
+s = 'Helo World'
+s[0]='H'
+s[-1]='d'
+s[0:5] = Hello
+
+to calculate the number of characters of the string= len(s) #space is also counted as a calculator
+s.islower()
+s.isupper()- wil show if the string is upper or lower i.e, true or false
+
+s.upper()- will convert to upper case #we have to store it else it wil not be printed
+s.lower() -will convert to lower case
+ we can pick even one character and change it into upper or lower for example s[6].upper() then 'W' 
+ TO PRINT TWICE multiply the string into 2
+ s = 'hh'
+print(s1*2)
+@@@
+ASSIGNMENT - browse all in-build string functions and what it does..
+len() description functionality example with output
+isalpha, is digit, count
+reference : w3schools.com
+@@@@ 19/7
+LISTS: -collection of data -ordered or changeabe - can hold any datatype
+list can store any number of values you want
+-NESTED LIST- ONE value of the list can also be a list
+-indexing always starts from zero
+
+IN-BUILT FUNCTIONS IN LIST:
+1. append - add an element to the end of the list
+2. insert - add an element to the specified position in the list
+3. sort   - sorts the elements inside in the alphabetical order
+            if there were numbers and capitlized starting letters then 1st it will sort in ths order
+             - number,uppercase,lowercase
+4. reverse- it will print from the last 
+5. sort(reverse= true) - to print in descending sorted order.
+6. len(fruits) - lenght of the list
+7. for i in range(0,len(fruits)):
+    print(fruits[i])   - to print indiviual elements in the list
+8. a*2 - it prints twice
+9. sum(num)
+10. max(num)
+11. min(num)
+12. remove()- removes the element 
+13. pop()= last element of the list gets removed
+14. extend() - extend the list to the existing list
+15. del
+2. insert - 
+
+@@@ list allowes duplicate elements but set will not allowe duplicate values @@@
+typecasting is changing the data type from one form to another eg: set to list / list to
+
+
+
+a = input().split()
+print (a)
+split and join are opposite functions
+where split is used to split the functions
+join will join the string or list using something
+
+@@@ NESTED LIST@@@
+L1 = [[1,2,3],[4,5,6],['hi','helo']]
+l1[0][0] is 1
+
+
+@@@LIST COMPHREHENSION@@@
+    - extention on list topics
+    - output will be list
+    - mostly list comphrehension happens in single line
+    - use - single line, easiness
+normal:                                 list comphrehension:
+res = []
+for i in input().split():               [i for i in input().split()]
+    res.append(i)
+
+## DICTIONARY ##
+--> it is also a set od value
+--> Structure of a dictionary is "key value pair"
+--> only one key corresponding single/ muitple values
+--> for one key we can have multiple values
+--> even values can be of any datatype
+syntax : keyvalue
+         must be under curly braces
+eg : camera = {'sony',500, 'Canon': 1000, 'fujifilm':[1212,'hi'}
+accessing a varable in dictionary:
+
+give the key it returns the values
+if we want to print anything that is not in the dictionary. then it is called key error
+camera = {'sony',500, 'Canon': 1000} then the value is assigned.
+'sony' in camera - prints TRUE if the value is present..sss
+
+'like keys' there ' values' to print the corresponding 'keys'
+del - deletes the keyvalue pair 
+del camera['SONY']
+camera = list(camera) ##prints or has only the keys
+
+counter- in collection import it to use counter and count the "keys"
+
+@@@@ NUMPY @@@
+- library 
+-functions are with basic to array and 
+give a alias name for numpy using keyword 'as'
+difference betwwen numpy and list is that... we can do arthmetic action to values in numpy whereas it is not applcable to list
+a = np.array([1,2,3,4,5,6])
+b = [1,2,3,4,5,6]
+a+1
+print(a.ndim) #dimensions- number of rows
+a.shape #actual shape of matrix
+a.size #no. of elements present inside the array
+a.reshape((2,3)) #change the shape of the matrix
+use (ctrl+i) to get help
+
+    
